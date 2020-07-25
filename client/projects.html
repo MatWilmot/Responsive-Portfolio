@@ -28,7 +28,7 @@
             <li>
               <a href="/about-me" class="grey-text text-darken-3">About Me</a>
             </li>
-            <li>
+            <li class="active">
               <a href="/projects" class="grey-text text-darken-3">Projects</a>
             </li>
             <li>
@@ -41,12 +41,133 @@
 
     <ul class="sidenav" id="mobile-demo">
       <li><a href="/about-me">About Me</a></li>
-      <li><a href="/projects">Projects</a></li>
+      <li class="active"><a href="/projects">Projects</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
     <!-- Nav Bar Ends -->
-    <div class="container">
-      <h1>Projects Page</h1>
+    <div class="container top-margin center">
+      <div class="row">
+        <div class="col xl10 offset-xl1">
+          <ul class="collapsible grey lighten-5">
+            <li class="active">
+              <div class="collapsible-header">
+                <i class="material-icons">book</i>Book It - The Social Bucket
+                List
+              </div>
+              <div class="collapsible-body">
+                <h6>Description:</h6>
+                <p>
+                  Book It was created as a group project in class. The brief was
+                  to use bcrypt, passport, and MySQL to power a website that can
+                  display user-specific information.
+                </p>
+                <h6 class="top-margin">Contributors:</h6>
+                <table>
+                  <!-- <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>GitHub Profile</th>
+                      <th>Item Price</th>
+                    </tr>
+                  </thead> -->
+
+                  <tbody>
+                    <tr>
+                      <td>Jim Mehta</td>
+                      <td><a href="https://github.com/jimit1">GitHub</a></td>
+                      <td>
+                        <a href="https://www.linkedin.com/in/jimmehta/"
+                          >LinkedIn</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Louise Lee</td>
+                      <td><a href="https://github.com/llee-125">GitHub</a></td>
+                      <td>
+                        <a href="https://www.linkedin.com/in/llee2018/"
+                          >LinkedIn</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Sosuke Brause</td>
+                      <td>
+                        <a href="https://github.com/sosukebrause">GitHub</a>
+                      </td>
+                      <td>
+                        <a href="https://www.linkedin.com/in/sosukebrause/"
+                          >LinkedIn</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h6 class="top-margin">Technologies Utilized:</h6>
+                <ul class="collection">
+                  <li class="collection-item">JavaScript / jQuery / ajax</li>
+                  <li class="collection-item">bcryptjs</li>
+                  <li class="collection-item">dotenv</li>
+                  <li class="collection-item">express / express-session</li>
+                  <li class="collection-item">jest</li>
+                  <li class="collection-item">MySQL2</li>
+                  <li class="collection-item">passport / passport-local</li>
+                  <li class="collection-item">Sequelize / sequelize-cli</li>
+                </ul>
+                <div class="top-margin center">
+                  <a
+                    href="https://github.com/MatWilmot/bucketList"
+                    class="waves-effect waves-light btn white lighten-5 grey-text text-darken-3"
+                    >GitHub Repo</a
+                  >
+                  <a
+                    href="https://group4-bucket-list.herokuapp.com/"
+                    class="waves-effect waves-light btn white lighten-5 grey-text text-darken-3"
+                    >Deployed App</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">gif</i>Gif Search Application
+              </div>
+              <div class="collapsible-body">
+                <span>CARD CONTENT GOES HERE</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">cloud</i>Global Weather Application
+              </div>
+              <div class="collapsible-body">
+                <span>CARD CONTENT GOES HERE</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">videogame_asset</i>Video Game Quiz
+              </div>
+              <div class="collapsible-body">
+                <span>CARD CONTENT GOES HERE</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">lock_outline</i>Simple Password
+                Generator
+              </div>
+              <div class="collapsible-body">
+                <span>CARD CONTENT GOES HERE</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script
@@ -55,6 +176,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/projects.js"></script>
   </body>
 </html>
