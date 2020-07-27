@@ -4,11 +4,13 @@ require("dotenv").config();
 const sendMessage = (message) => {
   // nodemailer code from video
   let transporter = nodemailer.createTransport({
-    service: "yahoo",
+    service: "gmail",
+    secure: false,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD,
     },
+    logger: true,
   });
 
   let mailOptions = {
