@@ -30,6 +30,7 @@ $(document).ready(function () {
   $("#submit-btn").on("click", () => {
     getMessage();
     sendMessage(message);
+    M.toast({ html: "Message Sent" });
     clearForm();
   });
 
