@@ -54,32 +54,8 @@ $(document).ready(function () {
       type: "POST",
       url: "/email",
       data: message,
-    }).then((res) => {
-      console.log(res);
+    }).then(() => {
+      console.log("Success");
     });
   };
 });
-
-// // nodemailer code from video
-// let transporter = nodemailer.createTransport({
-//   service: "gmail",
-//   auth: {
-//     // user: process.env.EMAIL,
-//     // pass: process.env.PASSWORD,
-//   },
-// });
-
-// let mailOptions = {
-//   from: "email",
-//   to: "matwilmot90@gmail.com",
-//   subject: "New Message",
-//   text: "Does this send every single time I save my work?",
-// };
-
-// transporter.sendMail(mailOptions, (err) => {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log("sent");
-//   }
-// });
