@@ -1,6 +1,7 @@
-var API_KEY = "1012824b799f7f8486f1962cf7f284ed-a65173b1-7eb6a907";
-var DOMAIN = "sandbox03eab7d893ec4cc6b435ee54a51033bc.mailgun.org";
+var API_KEY = process.env.API_KEY;
+var DOMAIN = process.env.DOMAIN;
 var mailgun = require("mailgun-js")({ apiKey: API_KEY, domain: DOMAIN });
+require("dotenv").config();
 
 const sendMessage = (message) => {
   const data = {
