@@ -1,6 +1,3 @@
-var API_KEY = process.env.API_KEY;
-var DOMAIN = process.env.DOMAIN;
-var mailgun = require("mailgun-js")({ apiKey: API_KEY, domain: DOMAIN });
 require("dotenv").config();
 
 const sendMessage = (message) => {
